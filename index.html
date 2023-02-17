@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+	<div class="contain">
+	<div class="title">
+		<h2>Calculator</h2>
+		<hr>
+	</div>
+	<div class="form">
+		<form name="calc" action="">
+			<table class="calcTbl" cellpadding="0" cellspacing="0">
+				<tr>
+					<input type="text" name="ReadOut" id="answerArea"
+					size="28" value="" maxlength="10" readonly>
+				</tr>
+
+				<tr>
+					<td>
+						<input class ="btn" type="button" name="btnSeven" value="7" onclick= "NumPressed(7)">
+					</td>
+					<td>
+						<input class ="btn" type="button" name="btnEigth" value="8" onclick= "NumPressed(8)">
+					</td>
+					<td>
+						<input class ="btn" type="button" name="btnNine" value="9" onclick= "NumPressed(9)">
+					</td>
+					<td>
+						<input class ="btnOper" type="button" name="btnBack" value="<" onclick= "Back()">
+					</td>
+					<td>
+						<input class ="btnOper" type="button" name="btnClear" value="C" onclick= "Clear()">
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<input class ="btn" type="button" name="btnFour" value="4" onclick= "NumPressed(4)">
+					</td>
+					<td>
+						<input class ="btn" type="button" name="btnFive" value="5" onclick= "NumPressed(5)">
+					</td>
+					<td>
+						<input class ="btn" type="button" name="btnSix" value="6" onclick= "NumPressed(6)">
+					</td>
+					<td>
+						<input class ="btnOper" type="button" name="+" value="+" onclick= "Operation('+')">
+					</td>
+					<td>
+						<input class ="btnOper" type="button" name="-" value="-" onclick= "Operation('-')">
+					</td>
+				</tr>
+
+				<tr>
+					<td>
+						<input class ="btn" type="button" name="btnOne" value="1" onclick= "NumPressed(1)">
+					</td>
+					<td>
+						<input class ="btn" type="button" name="btnTwo" value="2" onclick= "NumPressed(2)">
+					</td>
+					<td>
+						<input class ="btn" type="button" name="btnThree" value="3" onclick= "NumPressed(3)">
+					</td>
+					<td>
+						<input class ="btnOper" type="button" name="*" value="x" onclick= "Operation('*')">
+					</td>
+					<td>
+						<input class ="btnOper" type="button" name="/" value="/" onclick= "Operation('/')">
+					</td>					
+				</tr>
+
+				<tr>
+					<td>
+						<input class ="btn" type="button" id="btnZero" name="btnZero" value="0" onclick="NumPressed(0)">
+					</td>
+					<td>
+						<input class ="btn" type="button" name="btnDot" value="." onclick="Decimal()">
+					</td>
+					<td>
+						<input class ="btn" type="button" name="btnSign" value="+/-" onclick="Neg()">
+					</td>
+					<td>
+						<input class ="btnOper" type="button" name="%" value="%" onclick= "Perce()">
+					</td>
+					<td>
+						<input class ="btnOper" type="button" name="=" value="=" onclick= "Equal()">
+					</td>					
+				</tr>
+			</table> <!-- calcTbl -->
+		</form>
+		<script type="text/javascript" src="js/calc.js"></script>
+	</div> <!-- form -->
+	</div> <!-- contain -->
+</body>
+</html>

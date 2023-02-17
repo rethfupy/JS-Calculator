@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Changa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Play&display=swap');
+
+body{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.contain{
+	width: 320px;
+	margin: 0 auto;
+	border: 2px solid #000;
+	border-radius: 10px;
+	background-color: #b0e4f9;
+	padding-top: 3px;
+	box-shadow: 5px 5px 4px #888888;
+}
+.title{
+	text-align: center;
+	margin: 0 auto;
+	font-size: 20px;
+	font-family: 'Play', sans-serif;
+}
+.title hr{
+	margin-top: -20px;
+	max-width: 200px;
+}
+.form{
+	display: flex;
+	justify-content: center;
+	max-width: 1000px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+/*CALCULATOR*/
+
+#answerArea{
+	width: 300px;
+	padding: 10px 15px;
+	border-radius: 5px;
+	box-sizing: border-box;
+	text-align: right;
+	margin-bottom: 15px;
+	font-size: 20px;
+	background-color: #a3c7f9;
+	font-family: 'Changa', sans-serif;
+	font-weight: bold;
+}
+.btn{
+	width: 50px;
+	height: 50px;
+	margin: 0 10px 10px 0;
+	font-size: 26px;
+	background-color: #a3c7f9;
+	font-family: 'Changa', sans-serif;
+	border-radius: 8px;
+	cursor: pointer;
+}
+.btnOper{
+	width: 50px;
+	height: 50px;
+	margin: 0 0 10px 10px;
+	font-size: 26px;
+	background-color: #8bb9f9;
+	font-family: 'Changa', sans-serif;
+	font-weight: bold;
+	border-radius: 8px;
+	cursor: pointer;
+}
